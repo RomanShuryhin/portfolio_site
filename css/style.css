@@ -1,0 +1,237 @@
+.wrapper {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+nav .rslogo {
+    height: 55px;
+    margin: 20px 0 20px 20px;
+    position: relative;
+}
+nav .navigation a {
+    color: #b3d4fc;
+    margin-right: 20px;
+    font: 600 16px Montserrat, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+    black -1px 1px 0, black 1px -1px 0;
+}
+nav .navigation a:nth-child(odd) {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+nav a:active,
+nav a:focus {
+    outline: none;
+}
+nav .navigation a:hover {
+    color: rgb(128, 106, 106);
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+    black -1px 1px 0, black 1px -1px 0;
+}
+nav .navigation a:nth-child(odd):hover {
+    border: 2px solid rgb(110, 110, 221);
+}
+.about_me {
+    background: #F2F2F2;
+}
+#homesweethome .hero {
+    width: 100%;
+    background-image: url("../img/unnamed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    height: 100vh;
+}
+#homesweethome .hero .block {
+    margin: auto;
+    width: 70%;
+    max-width: 722px;
+}
+#homesweethome .hero .block h1:first-child {
+    margin-top: 0;
+}
+#homesweethome .hero .block h1 {
+    margin-top: 20px;
+    font: 300 italic 36px/42px Georgia, Times, "Times New Roman", serif;
+    color: #FFFFFF;
+    /* color: #444; */
+    color: white;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+    black -1px 1px 0, black 1px -1px 0;
+}
+
+#homesweethome .hero .block h1 span {
+    font-weight: 700;
+}
+.projects, .about_me {
+    padding: 100px 0;
+}
+.about_me > p {
+    max-width: 800px;
+    text-align: left;
+    margin: 2px auto;
+    font: 400 italic 16px/26px Georgia, Times, 'Times New Roman', serif;
+    color: #434A4F;
+    text-indent: 20px;
+}
+.about_me h2.about_me_title {
+    margin-bottom: 8px;
+}
+h2.project_title, h2.about_me_title {
+    max-width: 450px;
+    margin: 0 auto;
+    font: 700 22px/22px 'Montserrat', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #434A4F;
+}
+p.project_title {
+    max-width: 500px;
+    margin: 10px auto 50px auto;
+    font: 400 italic 16px/26px Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #434A4F;
+}
+.projects .projectgrid {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.projects .projectgrid .project {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.projects .projectgrid .project .overlay {
+    display: none;
+}
+.projects .projectgrid .project .overlay a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+.projects .projectgrid .project:hover > .overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 10;
+	display: flex;
+}
+.projects .projectgrid .project .overlay h3 {
+	display: block;
+	margin: auto;
+	font: 700 24px/24px 'Montserrat', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+}
+
+.projects .projectgrid .project .overlay h3 span {
+	font: 400 italic 16px/16px Georgia, Times, 'Times New Roman', serif;
+	letter-spacing: normal;
+	opacity: 0.7;
+}
+.projects .projectgrid .project img {
+    width:100%;
+    display: block;
+}
+#footer {
+    background: #434A4F;
+    width: 100%;
+    padding: 75px 0 50px 0;
+}
+#footer .centering {
+    margin: 0 auto;
+    text-align: center;
+}
+#footer .contact-info a, .contact-num, a{
+    font: 700 16px/16px 'Montserrat', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+#footer .social {
+	overflow: hidden;
+	text-align: center
+}
+#footer .socialicon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 30px 10px;
+}
+#footer .socialicon i {
+	font-size: 40px;
+	color: grey;
+}
+#footer .contact-info a:hover, #footer .social .socialicon i:hover, .contact-num a:hover {
+	color: rgb(142, 209, 42);
+}
+#footer p.copyright {
+    margin-top: 30px;
+    font: 300 11px/11px Verdana, Geneva, sans-serif;
+    letter-spacing: .3px;
+    color: #939598;
+}
+#footer p.fontSize {
+	font-size: 16px;
+}
+.back_to_top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: #629460;
+    display: none;
+}
+.back_to_top:hover,
+.back_to_top:focus {
+    filter: brightness(1.5);
+    outline: none;
+}
+.back_to_top:before,
+.back_to_top:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    transform: translate(-50%, -50%);
+}
+.back_to_top:before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #f5f0f6;
+}
+.back_to_top:after {
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid #f5f0f6;
+    border-left: 5px solid #f5f0f6;
+}
